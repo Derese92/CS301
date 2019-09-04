@@ -10,10 +10,8 @@
 			let city = document.getElementById("cityInputBox").value;
 			let state = document.getElementById("stateInputBox").value;
 			let zip = document.getElementById("zipInputBox").value;
-			let address = city + ", "+ state + zip;
-			 document.getElementById("outputDiv").innerHTML = name;
-			 document.getElementById("outputDiv1").innerHTML = street;
-			 document.getElementById("outputDiv2").innerHTML = address;
+			let address = name + "<br>" + street + "<br>" + city + ", "+ state + " " + zip;
+			document.getElementById("outputDiv").innerHTML = address;
 		}
 	</script>
 </head>
@@ -25,7 +23,6 @@
 	Zip Code<input type="text" id="zipInputBox"><br>
 	<button type="button" onclick="getAddress()">Make Address</button>
 	<div id = "outputDiv"></div>
-	<div id = "outputDiv1"></div>
-	<div id = "outputDiv2"></div>
+	
 </body>
 </html>
